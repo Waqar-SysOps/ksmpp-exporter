@@ -30,7 +30,7 @@ bash
 git clone https://github.com/yourusername/ksmpp-exporter.git
 ```
 
-### 2. Install Requirements
+### 2. Install Requirements & Run the Exporter
 
 ```
 bash
