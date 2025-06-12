@@ -36,3 +36,16 @@ cd ksmpp-exporter
 pip3 install -r requirements.txt
 python3 ksmpp_exporter.py --url=<http://YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-status.xml?password=<YOUR-KSMPPD-PASSWOD> --client=<ANY-STRING-FOR-IDENTIFICATION> --interval=<INTERVAL-TO-FETCH-METRICS>
 ```
+
+## Running via Docker
+
+```bash
+docker build -t ksmpp_exporter_image:<tag> .
+docker run -d \
+	--name ksmpp-exporter \
+	 -p9000:9000 \
+	ksmpp_exporter_image \
+	--url="<http://YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-status.xml?password=<YOUR-KSMPPD-PASSWOD>" \
+	--client=<ANY-STRING-FOR-IDENTIFICATION> \
+	--interval=<INTERVAL-TO-FETCH-METRICS>
+```
