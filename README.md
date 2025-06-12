@@ -18,8 +18,9 @@ This Python-based Prometheus exporter fetches ESME statistics from Kannel's `esm
 - `ksmpp_total_outbound_queued`: Total outbound queued per ESME
 
 All metrics are labeled with:
-- `system_id`
-- `client` (custom tag provided via CLI)
+- `url` (KSMPPD URL)
+- `client` (Custom tag)
+- `interval` (In seconds)
 
 ## Getting Started
 
@@ -34,7 +35,7 @@ git clone https://github.com/waqar.dandy.one/ksmpp-exporter.git
 ```bash
 cd ksmpp-exporter
 pip3 install -r requirements.txt
-python3 ksmpp_exporter.py --url=<http://YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-status.xml?password=<YOUR-KSMPPD-PASSWORD> --client=<ANY-STRING-FOR-IDENTIFICATION> --interval=<INTERVAL-TO-FETCH-METRICS>
+python3 ksmpp_exporter.py --url=<http://YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-status.xml?password=<YOUR-KSMPPD-PASSWORD> --client=<ANY-STRING-FOR-IDENTIFICATION> --interval=<INTERVAL-TO-FETCH-METRICS-IN-SECONDS>
 ```
 
 ## Running via Docker
@@ -45,10 +46,10 @@ docker build -t ksmpp_exporter_image:<tag> .
 
 Step-2: Run the container
 docker run -d \
-	--name ksmpp-exporter:<tag> \
+	--name ksmpp-exporter \
 	 -p9000:9000 \
-	ksmpp_exporter_image \
+	ksmpp_exporter_image:<tag> \
 	--url="<http://YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-status.xml?password=<YOUR-KSMPPD-PASSWORD>" \
 	--client=<ANY-STRING-FOR-IDENTIFICATION> \
-	--interval=<INTERVAL-TO-FETCH-METRICS>
+	--interval=<INTERVAL-TO-FETCH-METRICS-IN-SECONDS>
 ```
