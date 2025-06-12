@@ -26,7 +26,7 @@ All metrics are labeled with:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/ksmpp-exporter.git
+git clone https://github.com/waqar.dandy.one/ksmpp-exporter.git
 ```
 
 ### 2. Install Requirements & Run the Exporter
