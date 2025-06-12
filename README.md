@@ -25,15 +25,13 @@ All metrics are labeled with:
 
 ### 1. Clone the Repository
 
-```
-bash
+```bash
 git clone https://github.com/yourusername/ksmpp-exporter.git
 ```
 
 ### 2. Install Requirements & Run the Exporter
 
-```
-bash
+```bash
 cd ksmpp-exporter
 pip3 install -r requirements.txt
 python3 ksmpp_exporter.py --url=<http://YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-status.xml?password=<YOUR-KSMPPD-PASSWOD> --client=<ANY-STRING-FOR-IDENTIFICATION> --interval=<INTERVAL-TO-FETCH-METRICS>
