@@ -16,7 +16,7 @@ OUTBOUND_QUEUED = Gauge('ksmpp_total_outbound_queued', 'Total Outbound Queued pe
 parser = argparse.ArgumentParser(description="KSMpp Prometheus Exporter")
 parser.add_argument("-u", "--url", required=True, help="Full URL to fetch XML from")
 parser.add_argument("-c", "--client", required=True, help="Client name to tag this data with")
-parser.add_argument("-i", "--interval", type=int, default=10, help="Scrape interval in seconds")
+parser.add_argument("-i", "--interval", type=int, default=15, help="Scrape interval in seconds")
 args = parser.parse_args()
 
 url = args.url
