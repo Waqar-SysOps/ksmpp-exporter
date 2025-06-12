@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 9000
 
-CMD ["python", "ksmpp_exporter.py"]
+ENTRYPOINT ["python", "ksmpp_exporter.py"]
