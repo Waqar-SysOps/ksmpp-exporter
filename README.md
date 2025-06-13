@@ -17,11 +17,6 @@ This Python-based Prometheus exporter fetches ESME statistics from Kannel's `esm
 - `ksmpp_total_inbound_queued`: Total inbound queued per ESME
 - `ksmpp_total_outbound_queued`: Total outbound queued per ESME
 
-All metrics are labeled with:
-- `url` (KSMPPD URL)
-- `client` (Custom tag)
-- `interval` (In seconds)
-
 ## Getting Started
 
 ### 1. Clone the Repository
@@ -53,3 +48,9 @@ docker run -d \
 	--client=<ANY-STRING-FOR-IDENTIFICATION> \
 	--interval=<INTERVAL-TO-FETCH-METRICS-IN-SECONDS>
 ```
+
+## Contribute
+
+Got an idea or spotted something that could be better? Jump in!
+Whether it's a bug fix, a new feature, or just cleaning things up-every bit helps.
+Feel free to open an issue or send a pull request. Let's make this project awesome together!
