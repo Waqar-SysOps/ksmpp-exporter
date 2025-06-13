@@ -22,9 +22,9 @@
 <system-id>SMPP-Client-ABC-2</system-id>
 <bind-count>0</bind-count>
 <max-binds>3</max-binds>
-<inbound-load>0.00/0.00/0.00</inbound-load>
+<inbound-load>0.00/0.00/0.00</inbound-load> => Third value is fetched for inbound load using this exporter
 <max-inbound-load>1.00</max-inbound-load>
-<outbound-load>0.00/0.00/0.00</outbound-load>
+<outbound-load>0.00/0.00/0.00</outbound-load> => Third value is fetched for outbound load using this exporter
 <mt>10330</mt>
 <mo>0</mo>
 <dlr>10125</dlr>
@@ -34,9 +34,9 @@
 <system-id>SMPP-Client-ABC-3</system-id>
 <bind-count>0</bind-count>
 <max-binds>50</max-binds>
-<inbound-load>0.00/0.00/0.00</inbound-load>
+<inbound-load>0.00/0.00/0.00</inbound-load> => Third value is fetched for inbound load using this exporter
 <max-inbound-load>5000.00</max-inbound-load>
-<outbound-load>0.00/0.00/0.00</outbound-load>
+<outbound-load>0.00/0.00/0.00</outbound-load> => Third value is fetched for outbound load using this exporter
 <mt>3</mt>
 <mo>0</mo>
 <dlr>0</dlr>
@@ -46,9 +46,9 @@
 <system-id>SMPP-Client-ABC-4</system-id>
 <bind-count>5</bind-count>
 <max-binds>5</max-binds>
-<inbound-load>5.17/1.00/2.68</inbound-load>
+<inbound-load>5.17/1.00/2.68</inbound-load> => Third value is fetched for inbound load using this exporter
 <max-inbound-load>800.00</max-inbound-load>
-<outbound-load>5.17/0.00/1.88</outbound-load>
+<outbound-load>5.17/0.00/1.88</outbound-load> => Third value is fetched for outbound load using this exporter
 <mt>39086664</mt>
 <mo>348</mo>
 <dlr>33039639</dlr>
@@ -61,11 +61,11 @@
 <open-acks>1</open-acks>
 <simulate>no</simulate>
 <inbound-load>1.00</inbound-load>
-<inbound-queued>0</inbound-queued>
+<inbound-queued>0</inbound-queued> => This value is used to get the current inbound queue against an ESME
 <inbound-processed>268900</inbound-processed>
 <inbound-routing>0</inbound-routing>
 <outbound-load>0.00</outbound-load>
-<outbound-queued>0</outbound-queued>
+<outbound-queued>0</outbound-queued> => This value is used to get the current outbound queue against an ESME
 <outbound-processed>268901</outbound-processed>
 <mt>73053</mt>
 <mo>8</mo>
@@ -80,11 +80,11 @@
 <open-acks>0</open-acks>
 <simulate>no</simulate>
 <inbound-load>0.00</inbound-load>
-<inbound-queued>0</inbound-queued>
+<inbound-queued>0</inbound-queued> => This value is used to get the current inbound queue against an ESME
 <inbound-processed>206006</inbound-processed>
 <inbound-routing>0</inbound-routing>
 <outbound-load>0.00</outbound-load>
-<outbound-queued>0</outbound-queued>
+<outbound-queued>0</outbound-queued> => This value is used to get the current outbound queue against an ESME
 <outbound-processed>206006</outbound-processed>
 <mt>73400</mt>
 <mo>2</mo>
@@ -99,11 +99,11 @@
 <open-acks>0</open-acks>
 <simulate>no</simulate>
 <inbound-load>0.00</inbound-load>
-<inbound-queued>0</inbound-queued>
+<inbound-queued>0</inbound-queued> => This value is used to get the current inbound queue against an ESME
 <inbound-processed>172769</inbound-processed>
 <inbound-routing>0</inbound-routing>
 <outbound-load>0.00</outbound-load>
-<outbound-queued>0</outbound-queued>
+<outbound-queued>0</outbound-queued> => This value is used to get the current outbound queue against an ESME
 <outbound-processed>172769</outbound-processed>
 <mt>72337</mt>
 <mo>1</mo>
@@ -118,11 +118,11 @@
 <open-acks>0</open-acks>
 <simulate>no</simulate>
 <inbound-load>0.00</inbound-load>
-<inbound-queued>0</inbound-queued>
+<inbound-queued>0</inbound-queued> => This value is used to get the current inbound queue against an ESME
 <inbound-processed>156572</inbound-processed>
 <inbound-routing>0</inbound-routing>
 <outbound-load>0.00</outbound-load>
-<outbound-queued>0</outbound-queued>
+<outbound-queued>0</outbound-queued> => This value is used to get the current outbound queue against an ESME
 <outbound-processed>156572</outbound-processed>
 <mt>73188</mt>
 <mo>1</mo>
@@ -137,11 +137,11 @@
 <open-acks>0</open-acks>
 <simulate>no</simulate>
 <inbound-load>0.00</inbound-load>
-<inbound-queued>0</inbound-queued>
+<inbound-queued>0</inbound-queued> => This value is used to get the current inbound queue against an ESME
 <inbound-processed>151439</inbound-processed>
 <inbound-routing>0</inbound-routing>
 <outbound-load>0.00</outbound-load>
-<outbound-queued>0</outbound-queued>
+<outbound-queued>0</outbound-queued> => This value is used to get the current outbound queue against an ESME
 <outbound-processed>151439</outbound-processed>
 <mt>72523</mt>
 <mo>1</mo>
