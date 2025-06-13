@@ -33,6 +33,13 @@ pip3 install -r requirements.txt
 python3 ksmpp_exporter.py --url=<http://YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-status.xml?password=<YOUR-KSMPPD-PASSWORD> --client=<ANY-STRING-FOR-IDENTIFICATION> --interval=<INTERVAL-TO-FETCH-METRICS-IN-SECONDS>
 ```
 
+### 3. Create Grafana Dashboard
+
+```bash
+Go to directory "ksmpp-exporter/Grafana-Dashboard/"
+Import the JSON file text on Grafana version greater than or equal to v11.6.0 for full compatibility.
+```
+
 ## Running via Docker
 
 ```bash
