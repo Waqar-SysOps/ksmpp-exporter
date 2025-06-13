@@ -1,6 +1,6 @@
 # KSMPPD Prometheus Exporter
 
-This Python-based Prometheus exporter fetches ESME statistics from Kannel's `esme-status.xml` endpoint and exposes key metrics (inbound load, outbound load, and queued messages) for monitoring.
+This Python-based exporter that fetches ESME statistics from Kannel's `esme-status.xml` endpoint and exposes key metrics (inbound load, outbound load, and queued messages) for monitoring. This is totally compatible with Kannel ksmppd version svn-r5336M or greater. For backwards compatibility, even though this needs to be verified but still there would not be any issue. Just need to see if there are any difference in XML returned from the URL.
 
 ## Features
 
