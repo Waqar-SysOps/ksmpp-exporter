@@ -46,8 +46,8 @@ def fetch_and_export():
 
         for esme in root.findall(".//esme"):
             system_id = esme.findtext("system-id", "")
-            inbound_load = float(esme.findtext("inbound-load", "0/0/0").split("/")[2])
-            outbound_load = float(esme.findtext("outbound-load", "0/0/0").split("/")[2])
+            inbound_load = float(esme.findtext("inbound-load", "0/0/0").split("/")[2]) # You can change the value based on your requirement here
+            outbound_load = float(esme.findtext("outbound-load", "0/0/0").split("/")[2]) # You can change the value based on your requirement here
             total_inbound_queued = 0
             total_outbound_queued = 0
 
