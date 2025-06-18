@@ -22,7 +22,7 @@ This Python-based exporter that fetches ESME statistics from Kannel's `esme-stat
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/waqar.dandy.one/ksmpp-exporter.git
+git clone https://github.com/Waqar-SysOps/ksmpp-exporter.git
 ```
 
 ### 2. Install Requirements & Run the Exporter
