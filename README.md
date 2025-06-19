@@ -25,7 +25,7 @@ This Python-based exporter that fetches ESME statistics from Kannel's `esme-stat
 git clone https://github.com/Waqar-SysOps/ksmpp-exporter.git
 ```
 
-### 2. Install Requirements & Run the Exporter
+### 2. Install Requirements And Run the Exporter
 
 ```bash
 cd ksmpp-exporter
@@ -33,7 +33,9 @@ pip3 install -r requirements.txt
 python3 ksmpp_exporter.py --url=http://<YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-status.xml?password=<YOUR-KSMPPD-PASSWORD> --client=<ANY-STRING-FOR-IDENTIFICATION> --interval=<INTERVAL-TO-FETCH-METRICS-IN-SECONDS>
 ```
 
-### 3. Sample Prometheus Configuration
+### 3. Install And Setup Prometheus
+
+Below is a sample Prometheus configuration. Feel free to modify it as per requirement.
 
 ```yaml
 global:
