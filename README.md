@@ -80,6 +80,8 @@ docker run -d \
 
 ![Grafana Dashboard](images/ksmpp-dashboard.png)
 
+![Grafana Dashboard](images/ksmpp-dashboard-2.png)
+
 ## Contribute
 
 Got an idea or spotted something that could be better? Jump in!
