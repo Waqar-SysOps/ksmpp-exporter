@@ -51,7 +51,7 @@ docker build -t ksmpp_exporter_image:<tag> .
 Step-2: Run the container
 docker run -d \
 	--name ksmpp-exporter \
-	 -p9000:9000 \
+	-p9000:9000 \
 	ksmpp_exporter_image:<tag> \
 	--url="<http://YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-status.xml?password=<YOUR-KSMPPD-PASSWORD>" \
 	--client=<ANY-STRING-FOR-IDENTIFICATION> \
