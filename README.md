@@ -30,7 +30,7 @@ git clone https://github.com/Waqar-SysOps/ksmpp-exporter.git
 ```bash
 cd ksmpp-exporter
 pip3 install -r requirements.txt
-python3 ksmpp_exporter.py --url=<http://YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-status.xml?password=<YOUR-KSMPPD-PASSWORD> --client=<ANY-STRING-FOR-IDENTIFICATION> --interval=<INTERVAL-TO-FETCH-METRICS-IN-SECONDS>
+python3 ksmpp_exporter.py --url=http://<YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-status.xml?password=<YOUR-KSMPPD-PASSWORD> --client=<ANY-STRING-FOR-IDENTIFICATION> --interval=<INTERVAL-TO-FETCH-METRICS-IN-SECONDS>
 ```
 
 ### 3. Create Grafana Dashboard
@@ -38,6 +38,26 @@ python3 ksmpp_exporter.py --url=<http://YOUR-KSMPPD-IP>:<YOUR-KSMPPD-PORT>/esme-
 ```bash
 Go to directory "ksmpp-exporter/Grafana-Dashboard/"
 Import the JSON file text on Grafana version greater than or equal to v11.6.0 for full compatibility.
+```
+
+### Sample Prometheus Configuration
+
+```yaml
+global:
+  scrape_interval:     15s
+  evaluation_interval: 15s
+  external_labels:
+      monitor: 'example'
+
+alerting:
+  alertmanagers:
+  - static_configs:
+
+scrape_configs:
+  - job_name: ksmpp_stats
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['192.168.21.27:9000']
 ```
 
 ![Grafana Dashboard](images/ksmpp-dashboard.png)
