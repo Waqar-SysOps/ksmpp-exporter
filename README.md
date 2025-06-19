@@ -61,3 +61,5 @@ docker run -d \
 Got an idea or spotted something that could be better? Jump in!
 Whether it's a bug fix, a new feature, or just cleaning things up-every bit helps.
 Feel free to open an issue or send a pull request. Let's make this project awesome together!
+
+![Grafana Dashboard](images/ksmpp-dashboard.png)
